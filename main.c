@@ -4,9 +4,14 @@
 
 int main(void)
 {
-    printf("Welcome to cli-sort ing\n\n");
+    printf("Welcome to cli-sorting\n----------------------------------------------\n\n");
 
-    const int len = get_long("What is the length of the array?\n");
+    int len;
+    do
+    {
+        len = get_int("What is the length of the array?\n");
+    } while (len < 1);
+    
     long array[len];
 
     printf("\n");
