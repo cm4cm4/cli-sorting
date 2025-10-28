@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void selectionSort(double* array, int len)
+void selectionSort(long* array, int len)
 {
     for (int i = 0; i < len - 1; i++)
     {

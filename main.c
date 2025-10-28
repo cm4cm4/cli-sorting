@@ -6,20 +6,19 @@ int main(void)
 {
     printf("Welcome to cli-sort ing\n\n");
 
-    const int len = get_int("What is the length of the array?\n");
-    double array[len];
-    double *ptrArray = &array;
+    const int len = get_long("What is the length of the array?\n");
+    long array[len];
 
     printf("\n");
 
     for (int i = 0; i < len; i++)
     {
-        int element = get_double("Value for element %i: ",i);
+        long element = get_long("Value for element %i: ",i);
         array[i] = element;
     }
 
     printf("\n");
-    visualizeArray(&array, len);
+    visualizeArray(array, len);
     printf("\n");
 
     printf("1. Selection sort\n2. Bubble sort\n3. Merge sort\n\n");
@@ -35,7 +34,8 @@ int main(void)
 
     if (choice == 1)
     {
-        selectionSort(ptrArray, len);
+        selectionSort(array, len);
     }    
+    visualizeArray(array, len);
     return 0;
 }
