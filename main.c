@@ -36,6 +36,11 @@ int main(void)
     {
         selectionSort(array, len);
     }    
-    visualizeArray(array, len);
+    else if (choice == 2) 
+    {
+	bubbleSort(array, len);
+    }
+	
+	visualizeArray(array, len);
     return 0;
 }
