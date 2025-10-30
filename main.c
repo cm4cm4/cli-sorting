@@ -45,7 +45,10 @@ int main(void)
     {
 	bubbleSort(array, len);
     }
-	
+	else if (choice == 3)
+    {
+        mergeSort(array, len);
+    }
 	visualizeArray(array, len);
     return 0;
 }
