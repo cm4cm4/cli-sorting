@@ -7,4 +7,6 @@ void visualizeArray(long* array, int len);
 
 void bubbleSort(long* array, int len);
 
+void mergeSort(long* array, int len);
+
 #endif
